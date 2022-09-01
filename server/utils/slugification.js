@@ -1,10 +1,10 @@
 'use strict';
 
-const slugify = require('@sindresorhus/slugify');
+const slugify = require('slugify');
 const slugifyWithCount = slugify.counter();
 
-const toSlug = (string, options) => slugify(string, options);
-const toSlugWithCount = (string, options) => slugifyWithCount(string, options);
+const toSlug = (string, options) => slugify(string);
+const toSlugWithCount = (string, options) => slugify(string);
 
 module.exports = {
 	toSlug,
